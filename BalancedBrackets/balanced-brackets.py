@@ -1,4 +1,4 @@
-# Implementation of Balanced Brackets problem
+# Implementation of Balanced Brackets problem (MEDIUM)
 # https://www.hackerrank.com/challenges/balanced-brackets/problem
 
 import sys
