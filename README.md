@@ -1,2 +1,2 @@
 # hacker-rank
-Repository for my Hacker Rank Assessment´s solutions.
+Repository for my Hacker Rank Challenge´s solutions.
