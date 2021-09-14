@@ -11,24 +11,19 @@ namespace MSAssessment
             // Get array of letters
             char[] arr = S.ToCharArray();
             // Used to check odd chars in string
-            Dictionary<char, int> oddDict = new Dictionary<char, int>();
+            HashSet<char> oddSet = new HashSet<char>();
 
             foreach (char c in arr)
             {
                 // If it already contains one and there is this other one,
                 // the number of letters c is even, so remove from oddDict
-                if (oddDict.ContainsKey(c))
-                {
-                    oddDict.Remove(c);
-                }
-                // If it does not contain, then it is a new letter (odd)
-                else
-                {
-                    oddDict.Add(c, 1);
-                }
+                if (oddSet.Contains(c))
+                    oddSet.Remove(c);
+                else // If it does not contain, then it is a new letter (odd)
+                    oddSet.Add(c);
             }
 
-            return oddDict.Keys.Count;
+            return oddSet.Count;
         }
     }
 }
