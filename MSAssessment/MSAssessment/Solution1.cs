@@ -5,30 +5,52 @@ using System.Text;
 namespace MSAssessment
 {
     class Solution1
-    {/*
+    {
         public int solution(int N)
         {
             List<int> digits = GetDigits(N);
 
             int sum = GetSum(digits);
 
-            int resultSum = sum * 2;
-
-
-
-            return 0;
+            return GetIntFromDigits(GetResultDigits(digits, sum));
         }
 
-        public int GetIntFromDigitsSum(int sum)
+        public List<int> GetResultDigits(List<int> digits, int sum)
         {
-            int resultSum = sum * 2;
-            int result = Int32.MaxValue;
+            int resultSum = sum * 2, curSum = sum, lastDigit = 9;
 
-            for (int i = 1; i > resultSum; i++)
+            if (resultSum > digits.Count * 9)
+                return null;
+
+            List<int> resultDigits = new List<int>(digits);
+
+            for (int i = digits.Count - 1; i >= 0; i--)
             {
-                int temp = 
+                curSum -= digits[i];
+
+                //if (resultSum - curSum)
+
+                for (int j = 9; j >= 0; j--)
+                {
+                    if (curSum + j > resultSum)
+                    {
+                        lastDigit = j;
+                    }
+                    else if (curSum + j < resultSum)
+                    {
+                        curSum += lastDigit;
+                        resultDigits[i] = lastDigit;
+                        break;
+                    }
+                    else
+                    {// curSum + j == resultSum
+                        resultDigits[i] = j;
+                        return resultDigits;
+                    }
+                }
             }
 
+            return null;
         }
 
         public int GetSum(List<int> list)
@@ -37,7 +59,7 @@ namespace MSAssessment
 
             foreach (int item in list)
             {
-                result++;
+                result += item;
             }
 
             return result;
@@ -53,7 +75,7 @@ namespace MSAssessment
                 // Get last digit
                 int digit = n % 10;
                 // Update n, since we already got the last digit
-                n = n / 10;
+                n /= 10;
 
                 result.Add(digit);
             }
@@ -62,6 +84,20 @@ namespace MSAssessment
             result.Reverse();
             return result;
         }
-        */
+
+        int GetIntFromDigits(List<int> digits)
+        {
+            int result = 0;
+
+            if (digits != null)
+            {
+                for (int i = digits.Count - 1; i >= 0; i--)
+                {
+                    result += digits[i] * (int)Math.Pow(10, digits.Count - 1 - i);
+                }
+            }
+
+            return result;
+        }
     }
 }

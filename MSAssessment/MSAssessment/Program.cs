@@ -6,15 +6,23 @@ namespace MSAssessment
     {
         static void Main(string[] args)
         {
-            string[] arr1 = new string[] { "100", "110", "010", "011", "100" };
-            string[] arr2 = new string[] { "0011", "0111", "0111", "0110", "0000" };
+            int val1 = 14602;
+            int val2 = 24377;
 
-            Solution2 sol2 = new Solution2();
+            Solution1 sol1 = new Solution1();
 
-            Console.WriteLine($"arr1 result: " +
-                $"{String.Concat(Array.ConvertAll(sol2.solution(arr1), item => $"{item} "))}");
-            Console.WriteLine($"arr2 result: " +
-                $"{String.Concat(Array.ConvertAll(sol2.solution(arr2), item => $"{item} "))}");
+            Console.WriteLine($"val1 result: {sol1.solution(val1)}");
+            Console.WriteLine($"val2 result: {sol1.solution(val2)}");
+
+            //string[] arr1 = new string[] { "100", "110", "010", "011", "100" };
+            //string[] arr2 = new string[] { "0011", "0111", "0111", "0110", "0000" };
+            //
+            //Solution2 sol2 = new Solution2();
+            //
+            //Console.WriteLine($"arr1 result: " +
+            //    $"{String.Concat(Array.ConvertAll(sol2.solution(arr1), item => $"{item} "))}");
+            //Console.WriteLine($"arr2 result: " +
+            //    $"{String.Concat(Array.ConvertAll(sol2.solution(arr2), item => $"{item} "))}");
 
             //string s1 = "acbcbba";
             //string s2 = "axxaxa";
