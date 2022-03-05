@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitTape", "SplitTape\SplitTape.csproj", "{FD0E13E8-9639-4ABA-8169-4E0AB0DE0D5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD0E13E8-9639-4ABA-8169-4E0AB0DE0D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0E13E8-9639-4ABA-8169-4E0AB0DE0D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0E13E8-9639-4ABA-8169-4E0AB0DE0D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0E13E8-9639-4ABA-8169-4E0AB0DE0D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46D2B3A2-9D96-431C-98EF-A910BD3969BF}
+	EndGlobalSection
+EndGlobal

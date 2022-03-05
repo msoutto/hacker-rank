@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxCounters", "MaxCounters\MaxCounters.csproj", "{C220D050-9B54-4834-9CFC-717EB8DECD19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C220D050-9B54-4834-9CFC-717EB8DECD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C220D050-9B54-4834-9CFC-717EB8DECD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C220D050-9B54-4834-9CFC-717EB8DECD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C220D050-9B54-4834-9CFC-717EB8DECD19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03C9BA91-DBE3-4378-9961-FC2D62751219}
+	EndGlobalSection
+EndGlobal

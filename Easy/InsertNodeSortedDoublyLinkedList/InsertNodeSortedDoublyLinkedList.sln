@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertNodeSortedDoublyLinkedList", "InsertNodeSortedDoublyLinkedList\InsertNodeSortedDoublyLinkedList.csproj", "{096B7B30-5311-400A-AAF4-100E9D5613DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{096B7B30-5311-400A-AAF4-100E9D5613DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096B7B30-5311-400A-AAF4-100E9D5613DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096B7B30-5311-400A-AAF4-100E9D5613DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096B7B30-5311-400A-AAF4-100E9D5613DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {764B3D84-88C5-49B4-8AE6-29D309A42A67}
+	EndGlobalSection
+EndGlobal
